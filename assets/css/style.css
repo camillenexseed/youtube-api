@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper::after {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg-border.png) center center / 4px 4px;
+}
+
+.header {
+  font-size: 30px;
+  text-align: center;
+  padding: 30px 100px;
+  background: rgba(255,255,255,.7);
+}
+
+.header h1 {
+  letter-spacing: .1em;
+  font-size: 5vw;
+}
+
+#youtube {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  height: 100vh;
+}
